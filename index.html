@@ -1,0 +1,372 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Jitendra Kumar Portfolio</title>
+  <script src="./src/js/tailwind.js"></script>
+  <script src="./src/js/aos.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./src/css/aos.css" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #555;
+    }
+
+    /* Adding transition for smooth scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .hero-img {
+      transition: transform 0.5s ease;
+    }
+
+    .hero-img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Gradient Background for Sections */
+    .gradient-bg {
+      background: linear-gradient(to right, #ff7e5f, #feb47b);
+    }
+
+    /* Button Hover Effect */
+    .btn-hover:hover {
+      transform: translateY(-4px);
+      background-color: #ff4c7d;
+    }
+
+    /* Fancy Cards */
+    .card {
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      transform: scale(1.05);
+    }
+
+    .card h3 {
+      color: #333;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+  <!-- Navbar -->
+  <nav class="bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a class="text-3xl font-extrabold text-white hover:text-yellow-300 transition duration-300" href="#home">Jitendra
+        Kumar</a>
+      <button class="text-white md:hidden" id="navbar-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul id="navbar" class="hidden md:flex space-x-6">
+        <li><a class="text-white hover:text-yellow-300 transition duration-300" href="#about">About</a></li>
+        <li><a class="text-white hover:text-yellow-300 transition duration-300" href="#experience">Experience</a></li>
+        <li><a class="text-white hover:text-yellow-300 transition duration-300" href="#education">Education</a></li>
+        <li><a class="text-white hover:text-yellow-300 transition duration-300" href="#skills">Skills</a></li>
+        <li><a class="text-white hover:text-yellow-300 transition duration-300" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-blue-500 to-purple-600 py-20 text-white">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold animate-bounce" data-aos="fade-up" data-aos-delay="100">
+        Hello, I'm Jitendra Kumar
+      </h1>
+      <p class="mt-4 text-lg sm:text-xl" data-aos="fade-up" data-aos-delay="200">
+        A passionate Full Stack Software Developer
+      </p>
+
+      <!-- Image Frame (Carousel) -->
+      <div class="relative mt-8 mx-auto w-48 h-48 sm:w-56 sm:h-56">
+        <!-- Images Container -->
+        <div class="image-frame w-full h-full absolute top-0 left-0">
+          <img id="profile-img" alt="A professional headshot of Jitendra Kumar"
+            class="hero-img mx-auto rounded-full w-full h-full object-cover border-4 border-white shadow-lg"
+            src="./src/images/own1.jpg" style="transition: opacity 0.5s ease;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="bg-gradient-to-r from-pink-300 to-yellow-300 py-20" id="about" data-aos="fade-up">
+    <div class="container mx-auto px-4" data-aos="fade-up" data-aos-delay="100">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-800 text-center">About Me</h2>
+      <p class="text-gray-600 mt-4 text-center max-w-2xl mx-auto">
+        I am a Full Stack Software Developer with a passion for solving complex problems and creating efficient systems.
+        I specialize in developing APIs, working with AI-based applications, and continuously improving software
+        functionalities to make a difference in the tech world. I am dedicated to ongoing learning and love exploring
+        new technologies.
+      </p>
+      <div class="flex justify-center mt-8">
+        <img alt="A collage of various web development projects" class="rounded-lg shadow-lg w-full max-w-4xl"
+          src="https://placehold.co/800x400" data-aos="fade-up" data-aos-delay="400" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="bg-gradient-to-r from-blue-400 to-green-400 py-20" id="experience" data-aos="fade-up">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-800 text-center" data-aos="fade-up" data-aos-delay="100">
+        Work Experience</h2>
+      <div class="grid grid-cols-1 gap-8 mt-8" data-aos="fade-up" data-aos-delay="200">
+        <div class="card p-6">
+          <h3 class="text-xl font-bold text-gray-800">Aloha Technology Pvt Ltd (01/2023 - Present)</h3>
+          <ul class="list-disc list-inside text-gray-600 mt-2">
+            <li>Leading the integration of new features, performed bug fixing, and conducted regular development for the
+              Merchant Service Provider project in C#.NET, ensuring seamless project delivery and enhanced
+              functionality.</li>
+            <li>Deployed .NET projects on dedicated servers using TeamCity for continuous integration and deployment,
+              configured TeamCity build and deploy configurations to automate the deployment process, ensuring smooth
+              and efficient delivery of software updates.</li>
+            <li>Implemented a centralized syncing service in C#.NET to synchronize data from multiple factories to a
+              central server, resulting in streamlined data management and centralized reporting.</li>
+            <li>Developed an AI-based chat-bot for the help site in Golang, enhancing user experience and providing
+              efficient support services.</li>
+            <li>Developed an AI-based blank field detection system to accurately identify and extract blank fields in
+              PDF form documents, improving data accuracy and processing efficiency.</li>
+            <li>Executing the conversion of all backend microservices from Delphi to Golang for a doc eSign project,
+              improving system performance and scalability. Also implementing new features as required in Golang.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="bg-gradient-to-r from-green-600 via-teal-500 to-blue-500 py-20" id="education" data-aos="fade-up">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white text-center" data-aos="fade-up" data-aos-delay="100">
+        Education</h2>
+      <p class="text-white text-center mt-4 text-lg" data-aos="fade-up" data-aos-delay="200">Here is a glimpse of my
+        educational journey!</p>
+
+      <!-- Education Details -->
+      <div class="mt-8">
+        <div class="bg-white p-6 rounded-lg shadow-xl mb-6" data-aos="fade-up" data-aos-delay="300">
+          <h3 class="text-2xl font-bold text-gray-800">Master of Computer Application (MCA)</h3>
+          <p class="text-lg text-gray-600 mt-2">2021 - 2023</p>
+          <p class="text-gray-600 mt-2">LNCT Group of Colleges, Bhopal, Madhya Pradesh</p>
+          <p class="text-gray-600 mt-2">Grade: 8.7/10</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-xl mb-6" data-aos="fade-up" data-aos-delay="400">
+          <h3 class="text-2xl font-bold text-gray-800">Bachelor of Computer Application (BCA)</h3>
+          <p class="text-lg text-gray-600 mt-2">2018 - 2021</p>
+          <p class="text-gray-600 mt-2">Patliputra University / Arcade Business College, Patna, Bihar</p>
+          <p class="text-gray-600 mt-2">Grade: 78.25%</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-xl mb-6" data-aos="fade-up" data-aos-delay="500">
+          <h3 class="text-2xl font-bold text-gray-800">Intermediate (12th)</h3>
+          <p class="text-lg text-gray-600 mt-2">2016 - 2018</p>
+          <p class="text-gray-600 mt-2">C.C.S. College Rajpur, Rohtas, Bihar</p>
+          <p class="text-gray-600 mt-2">Grade: 60%</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-xl mb-6" data-aos="fade-up" data-aos-delay="600">
+          <h3 class="text-2xl font-bold text-gray-800">Secondary School (10th)</h3>
+          <p class="text-lg text-gray-600 mt-2">2016</p>
+          <p class="text-gray-600 mt-2">S.N. High School Parasiyan Thakurai, Rohtas, Bihar</p>
+          <p class="text-gray-600 mt-2">Grade: 72.8%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-500 py-20" id="skills" data-aos="fade-up">
+    <div class="container mx-auto px-4" data-aos="fade-up" data-aos-delay="100">
+      <h2 class="text-4xl sm:text-5xl font-extrabold text-white text-center">Key Skills</h2>
+      <p class="text-white text-center mt-4 text-lg sm:text-xl">Here are my key skills in various domains of technology.
+        Feel free to explore!</p>
+
+      <!-- Key Skills Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8" data-aos="fade-up" data-aos-delay="150">
+        <!-- Programming Languages -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-xl transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+          data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-2xl font-bold text-gray-800">Programming Languages</h3>
+          <ul class="list-disc list-inside mt-4 text-gray-600">
+            <li><a href="https://golang.org/" class="text-blue-500 hover:underline" target="_blank">Golang</a></li>
+            <li><a href="https://dotnet.microsoft.com/" class="text-blue-500 hover:underline" target="_blank">C#.NET</a>
+            </li>
+            <li><a href="https://en.cppreference.com/w/" class="text-blue-500 hover:underline" target="_blank">C++</a>
+            </li>
+            <li><a href="https://www.python.org/" class="text-blue-500 hover:underline" target="_blank">Python</a></li>
+          </ul>
+        </div>
+
+        <!-- Databases -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-xl transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+          data-aos="fade-up" data-aos-delay="300">
+          <h3 class="text-2xl font-bold text-gray-800">Databases</h3>
+          <ul class="list-disc list-inside mt-4 text-gray-600">
+            <li><a href="https://www.microsoft.com/en-us/sql-server" class="text-blue-500 hover:underline"
+                target="_blank">SQL Server</a></li>
+            <li><a href="https://www.sqlite.org/" class="text-blue-500 hover:underline" target="_blank">SQLite</a></li>
+            <li><a href="https://www.mongodb.com/what-is-mongodb" class="text-blue-500 hover:underline"
+                target="_blank">MongoDB</a></li>
+          </ul>
+        </div>
+
+        <!-- AI/ML -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-xl transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+          data-aos="fade-up" data-aos-delay="400">
+          <h3 class="text-2xl font-bold text-gray-800">AI/ML</h3>
+          <ul class="list-disc list-inside mt-4 text-gray-600">
+            <li><a href="https://www.tensorflow.org/" class="text-blue-500 hover:underline"
+                target="_blank">TensorFlow</a></li>
+            <li><a href="https://pytorch.org/" class="text-blue-500 hover:underline" target="_blank">PyTorch</a></li>
+            <li><a href="https://opencv.org/" class="text-blue-500 hover:underline" target="_blank">OpenCV</a></li>
+            <li><a href="https://nlp.stanford.edu/" class="text-blue-500 hover:underline" target="_blank">Stanford
+                NLP</a></li>
+            <li><a href="https://scikit-learn.org/" class="text-blue-500 hover:underline"
+                target="_blank">Scikit-learn</a></li>
+            <li><a href="https://www.dialogflow.com/" class="text-blue-500 hover:underline" target="_blank">Dialogflow
+                (Chatbot)</a></li>
+          </ul>
+        </div>
+
+        <!-- Web Development -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-xl transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+          data-aos="fade-up" data-aos-delay="500">
+          <h3 class="text-2xl font-bold text-gray-800">Web Development</h3>
+          <ul class="list-disc list-inside mt-4 text-gray-600">
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="text-blue-500 hover:underline"
+                target="_blank">HTML</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="text-blue-500 hover:underline"
+                target="_blank">CSS</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="text-blue-500 hover:underline"
+                target="_blank">JavaScript</a></li>
+          </ul>
+        </div>
+
+        <!-- Other -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-xl transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+          data-aos="fade-up" data-aos-delay="600">
+          <h3 class="text-2xl font-bold text-gray-800">Other</h3>
+          <ul class="list-disc list-inside mt-4 text-gray-600">
+            <li><a href="https://en.wikipedia.org/wiki/Object-oriented_programming"
+                class="text-blue-500 hover:underline" target="_blank">Object-Oriented Programming (OOP)</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Data_structure" class="text-blue-500 hover:underline"
+                target="_blank">Data Structures</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Algorithm" class="text-blue-500 hover:underline"
+                target="_blank">Algorithms</a></li>
+          </ul>
+        </div>
+
+        <!-- Languages -->
+        <div
+          class="bg-white p-6 rounded-lg shadow-xl transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+          data-aos="fade-up" data-aos-delay="700">
+          <h3 class="text-2xl font-bold text-gray-800">Languages</h3>
+          <ul class="list-disc list-inside mt-4 text-gray-600">
+            <li><a href="https://en.wikipedia.org/wiki/English_language" class="text-blue-500 hover:underline"
+                target="_blank">English</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Hindi" class="text-blue-500 hover:underline"
+                target="_blank">Hindi</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="bg-gradient-to-r from-indigo-500 to-pink-500 py-20" id="contact" data-aos="fade-up">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-800 text-center" data-aos="fade-up" data-aos-delay="100">
+        Contact Information</h2>
+      <div class="flex justify-center mt-8" data-aos="fade-up" data-aos-delay="200">
+        <div class="card p-6 bg-white rounded-lg shadow-xl transform hover:scale-105 transition duration-300">
+          <p class="text-gray-600"><strong>Phone:</strong> (+91) 6201940005</p>
+          <p class="text-gray-600"><strong>Email:</strong>
+            <a href="mailto:jitendrakumar64477@gmail.com"
+              class="text-blue-500 hover:text-blue-700 transition duration-300">jitendrakumar64477@gmail.com</a>
+          </p>
+          <p class="text-gray-600"><strong>Location:</strong> Pune, India</p>
+
+          <!-- Fancy WhatsApp Button -->
+          <a href="https://wa.me/916201940005?text=Hello,%20I%20would%20like%20to%20connect%20with%20you"
+            target="_blank"
+            class="mt-4 inline-block px-8 py-3 bg-gradient-to-r from-green-400 via-green-500 to-green-600 text-white text-lg font-semibold rounded-full transform hover:scale-110 hover:rotate-3 shadow-lg transition-all duration-300">
+            <i class="fab fa-whatsapp text-xl mr-2"></i> Send Message on WhatsApp
+          </a>
+        
+          <!-- Fancy Email Button -->
+          <a href="mailto:jitendrakumar64477@gmail.com"
+            class="mt-4 inline-block px-8 py-3 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 text-white text-lg font-semibold rounded-full transform hover:scale-110 hover:rotate-3 shadow-lg transition-all duration-300">
+            <i class="fas fa-envelope text-xl mr-2"></i> Send Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Toggle Navbar for Mobile
+    const navbarToggle = document.getElementById('navbar-toggle');
+    const navbar = document.getElementById('navbar');
+    navbarToggle.addEventListener('click', () => {
+      navbar.classList.toggle('hidden');
+    });
+
+    var hoveredCnt = 0;
+    // Get the image element
+    const profileImg = document.getElementById('profile-img');
+
+    // Original image source
+    const originalSrc = "own1.jpg"; // Replace this with your actual image
+    var genImg = "./src/images/own";
+
+    // Change the image on hover
+    profileImg.addEventListener('mouseenter', function () {
+      hoveredCnt += 1;
+      var imgInd = (hoveredCnt % 3) + 1;
+      var imgSrc = genImg + imgInd.toString() + ".jpg";
+      profileImg.style.opacity = 0;  // Start fade out
+      setTimeout(function () {
+        profileImg.src = imgSrc;   // Change the source after fading out
+        profileImg.style.opacity = 1; // Fade in the new image
+      }, 500); // 500ms to match fade out duration
+
+    });
+
+    // Initialize AOS
+    AOS.init({
+      duration: 1000, // Animation duration
+      easing: 'ease-in-out', // Easing effect
+    });
+  </script>
+</body>
+
+</html>
